@@ -15,7 +15,7 @@ def clear_console():
     os.system('cls' if os.name == 'nt' else 'clear')
 
 # Use to get user input and filter it from menu
-def get_input():
+def user_selected_dataset():
     '''Display a message for dataset selection, control user's input and return user choice'''
     
     d = input('Which dataset would you like to load: ')
@@ -38,7 +38,7 @@ def get_input():
                 print('>>> NO SUCH INPUT! => "{}" <<<'.format(d))
                 d = input('Please enter a valid input (1, 2, or 3): ')
 filename = ''
-# Use to load targeted file based on choice made previously (on the menu 'get_input()')
+# Use to load targeted file based on choice made previously (on the menu 'user_selected_dataset()')
 def load_targeted_data(choice):
     ''' Load expected csv file based on user selection through "choice" argument
         RETURN:
@@ -444,7 +444,7 @@ def processing_core_operations(input_filter, df):
 def main():
     while True:
         show_start_menu()
-        df = load_targeted_data(get_input())
+        df = load_targeted_data(user_selected_dataset())
         # Convert to date time
         df['Start Time'] = pd.to_datetime(df['Start Time'])
         df['End Time'] = pd.to_datetime(df['End Time'])
