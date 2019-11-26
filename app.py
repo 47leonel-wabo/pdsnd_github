@@ -4,19 +4,19 @@ import os
 import time
 
 #***********************************************************************************
-# This code is a bit longer, due to extra work added to filter user incorrect inputs
+# This code is a bit longer, due to extra work made to filter user incorrect inputs
 # just for fun. :)
 #***********************************************************************************
 
 # Use to clean the console for easy navigation throwgh the whole program
 def clear_console():
-    '''Clear the console for better outputs readability'''
+    '''Clear the console for better readability'''
     
     os.system('cls' if os.name == 'nt' else 'clear')
 
 # Use to get user input and filter it from menu
 def get_input():
-    '''Display a message for dataset selection, control user's input and return that choice'''
+    '''Display a message for dataset selection, control user's input and return user choice'''
     
     d = input('Which dataset would you like to load: ')
     t = True
