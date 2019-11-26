@@ -60,7 +60,7 @@ def load_targeted_data(choice):
 
 # Use to show menu of possible choices to user
 def show_start_menu():
-    '''Display the main menu'''
+    '''Display the main menu - a list of available dataset'''
     
     clear_console()
     print('***********************************************')
@@ -73,8 +73,8 @@ def show_start_menu():
 
 # Use to test if user wants to see raw data or not
 def ask_for_raw_data():
-    '''Display a message asking whether user wants to see raw data, and control user's inputs
-        and retur corresponding response (yes or no)'''
+    '''Display a message asking whether user wants to see raw data, and control user's incorrect inputs
+        and return corresponding response (yes or no)'''
     
     raw = input('Would you like to see raw data (y/n): ')
     t = True
@@ -98,7 +98,7 @@ def ask_for_raw_data():
                 raw = input('Would you like to see raw data (y/n): ')
 
 def select_filtering_period():
-    '''Display a menu of possible filters'''
+    '''Display a menu of possible filters to be applied to dataset selected previously'''
     
     clear_console()
     print('**************************************')
@@ -164,7 +164,7 @@ def show_raw_data(df):
                 print('INVALID INPUT >>{}<<'.format(more_data))
 
 def one_more_time():
-    '''Ask user at the end, whether they want to perform again, and control user's inputs'''
+    '''Ask user at the end, whether they want to perform again, and control user's inputs if incorrect'''
     
     t = True
     while t:
