@@ -7,7 +7,7 @@ Tuesday, November 26, 2019
 
 # Project Title
 
-Post your work on GitHub
+**Post your work on GitHub**
 
 # Description
 
