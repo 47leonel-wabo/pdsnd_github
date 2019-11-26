@@ -30,4 +30,4 @@ Python libraries used
 
 # Credits
 
-This project was made following Python [Pandas Documentation](https://pandas.pydata.org/), as well as [StackOverFlow](https://stackoverflow.com), and [Python Documentation](https://docs.python.org/3/) for built in modules.
+This project was made following Python [Pandas Documentation](https://pandas.pydata.org/), as well as [StackOverFlow](https://stackoverflow.com), and [Python Documentation](https://docs.python.org/3/) for built in modules. Basics on [Mackdown syntax](https://www.markdownguide.org/basic-syntax/)
